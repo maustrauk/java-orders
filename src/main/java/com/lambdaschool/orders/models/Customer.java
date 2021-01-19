@@ -30,7 +30,7 @@ public class Customer {
             nullable = false)
     private Agent agent;
 
-    @OneToMany(mappedBy = "order",
+    @OneToMany(mappedBy = "customer",
             cascade = CascadeType.ALL,
             orphanRemoval = true)
     private List<Order> orders = new ArrayList<>();
@@ -38,7 +38,7 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(String custname, String custcity, String workingarea, String custcountry, String grade, double openingamt, double receiveamt, double paymentamt, double outstandingamt, String phone, Agent agent, List<Order> orders) {
+    public Customer(String custname, String custcity, String workingarea, String custcountry, String grade, double openingamt, double receiveamt, double paymentamt, double outstandingamt, String phone, Agent agent) {
         this.custname = custname;
         this.custcity = custcity;
         this.workingarea = workingarea;
@@ -50,7 +50,6 @@ public class Customer {
         this.outstandingamt = outstandingamt;
         this.phone = phone;
         this.agent = agent;
-        this.orders = orders;
     }
 
     public long getCustcode() {

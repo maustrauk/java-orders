@@ -1,6 +1,6 @@
 package com.lambdaschool.orders;
 
-import com.github.javafaker.Faker;
+//import com.github.javafaker.Faker;
 import com.lambdaschool.orders.models.Agent;
 import com.lambdaschool.orders.models.Customer;
 import com.lambdaschool.orders.models.Order;
@@ -551,7 +551,7 @@ public class SeedData
         ordersrepos.save(o12);
 
         //Begins the faker data
-
+        /*
         Faker dataFaker = new Faker(new Locale("en-US"));
         Set<String> customerNames = new HashSet<>();
         for (int i = 0; i < 100; i++) {
@@ -624,6 +624,6 @@ public class SeedData
 
             // this actually saves the faker data.
             custrepos.save(fakeCustomer);
-        }
+        }*/
     }
 }
