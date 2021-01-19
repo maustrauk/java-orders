@@ -8,16 +8,13 @@ import com.lambdaschool.orders.models.Payment;
 import com.lambdaschool.orders.repositories.AgentsRepository;
 import com.lambdaschool.orders.repositories.CustomersRepository;
 import com.lambdaschool.orders.repositories.OrdersRepository;
-import com.lambdaschool.orders.repositories.PaymentRepository;
+import com.lambdaschool.orders.repositories.PaymentsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.HashSet;
-import java.util.Locale;
 import java.util.Random;
-import java.util.Set;
 
 @Transactional
 @Component
@@ -45,7 +42,7 @@ public class SeedData
      * Connects the payment table to this SeedData method
      */
     @Autowired
-    private PaymentRepository paymentrepos;
+    private PaymentsRepository paymentrepos;
 
     /**
      * A Random generator is needed to randomly generate faker data.
