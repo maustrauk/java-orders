@@ -90,10 +90,10 @@ The database will be available from the H2 Console. Each table will contain the 
 
 ### Stretch Goal
 
-* [ ] Implement Javafaker
-    * [ ] Create around 100 new customers
-    * [ ] Randomize as much of the data as possible
-    * [ ] You can assign all new customers to the same agent
-    * [ ] Randomly assign 0 - 10 orders to each customer
-        * [ ] Randomize as much of the data as possible
-        * [ ] All orders can be of the same payment type
+* [*] Implement Javafaker
+    * [*] Create around 100 new customers
+    * [*] Randomize as much of the data as possible
+    * [*] You can assign all new customers to the same agent
+    * [*] Randomly assign 0 - 10 orders to each customer
+        * [*] Randomize as much of the data as possible
+        * [*] All orders can be of the same payment type

@@ -1,6 +1,6 @@
 package com.lambdaschool.orders;
 
-//import com.github.javafaker.Faker;
+import com.github.javafaker.Faker;
 import com.lambdaschool.orders.models.Agent;
 import com.lambdaschool.orders.models.Customer;
 import com.lambdaschool.orders.models.Order;
@@ -14,7 +14,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Locale;
+import java.util.Set;
 
 @Transactional
 @Component
@@ -548,7 +551,7 @@ public class SeedData
         ordersrepos.save(o12);
 
         //Begins the faker data
-        /*
+
         Faker dataFaker = new Faker(new Locale("en-US"));
         Set<String> customerNames = new HashSet<>();
         for (int i = 0; i < 100; i++) {
@@ -596,7 +599,7 @@ public class SeedData
                     tempPhone,
                     a10);
 
-            int randomNumber = random.nextInt(10); // random number 0 through 9
+            int randomNumber = random.nextInt(11); // random number 0 through 10
             for (int i = 0; i < randomNumber; i++) {
                 double tempGetOrdamount = dataFaker.number()
                         .randomDouble(2,
@@ -621,6 +624,6 @@ public class SeedData
 
             // this actually saves the faker data.
             custrepos.save(fakeCustomer);
-        }*/
+        }
     }
 }
